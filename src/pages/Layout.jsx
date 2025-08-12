@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import Dashboard from './admin__dashboard/Dashboard';
 
 // 1. Outlet을 사용하여 모든 라우팅에서 보이게 해야합니다.
 // 2. 각 Link를 연동하여 알맞는 주소로 전송 해야 합니다.
@@ -19,6 +20,7 @@ function Layout() {
           <Link to="/admin/notfound">잘못된 페이지</Link>
         </div>
         <div className="main-content">
+          <Dashboard />
           <Outlet />
         </div>
       </div>
